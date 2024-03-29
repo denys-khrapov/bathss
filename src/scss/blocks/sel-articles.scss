@@ -1,0 +1,202 @@
+.sel-articles {
+  background-color: var(--Banya-Brown-50);
+  padding: 64px 0;
+  // .sel-articles__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+  }
+  // .sel-articles__button
+  &__button {
+  }
+  // .sel-articles__content
+  &__content {
+  }
+  // .sel-articles__slider
+  &__slider {
+  }
+  // .sel-articles__wrapper
+  &__wrapper {
+  }
+  // .sel-articles__slide
+  &__slide {
+  }
+  .heading {
+    // .heading__top
+    &__top {
+    }
+    // .heading__title-box
+    &__title-box {
+      @media (min-width: $pc) {
+        max-width: 412px;
+      }
+    }
+    // .heading__title
+    &__title {
+    }
+    // .heading__right-col
+    &__right-col {
+      &::before {
+        width: calc(100% - 52px);
+      }
+    }
+    // .heading__icon-holder
+    &__icon-holder {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.slider-sel-articles {
+  overflow: visible;
+  // .slider-sel-articles__nav
+  &__nav {
+  }
+}
+.slide-sel-articles {
+  width: 100%;
+  max-width: 256px;
+  border-radius: 12px;
+  background: var(--Banya-Base-color-White-50);
+  transition: background 0.4s ease 0s;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $pc) {
+    max-width: 376px;
+    height: 476px;
+    border-radius: 16px;
+    @media (any-hover: hover) {
+      &:hover {
+        background: var(--Banya-Base-color-White-100);
+        .slide-sel-articles__image-holder {
+          img {
+            max-height: 196px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  // .slide-sel-articles__link
+  &__link {
+  }
+  // .slide-sel-articles__image-holder
+  &__image-holder {
+    position: relative;
+    height: 206px;
+    width: 100%;
+    padding: 8px 8px 0 8px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+      border-radius: 8px;
+      transition: max-height 0.4s ease 0s, opacity 0.4s ease 0s;
+    }
+    @media (min-width: $pc) {
+      height: unset;
+      padding: 16px 16px 0 16px;
+      img {
+        height: 100%;
+        max-height: 259px;
+        border-radius: 12px;
+      }
+    }
+  }
+  // .slide-sel-articles__category
+  &__category {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    @media (min-width: $pc) {
+      top: 32px;
+      left: 32px;
+    }
+  }
+  // .slide-sel-articles__content
+  &__content {
+    padding: 24px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    position: relative;
+    flex: 1 0 0;
+    @media (min-width: $pc) {
+      min-height: 201px;
+      padding: 32px 32px 24px 32px;
+    }
+  }
+  // .slide-sel-articles__text-box
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    @media (min-width: $pc) {
+      width: 100%;
+      max-width: 312px;
+      position: absolute;
+      left: 32px;
+      bottom: 56px;
+    }
+  }
+  // .slide-sel-articles__title
+  &__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--Banya-Graphite-800);
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  // .slide-sel-articles__text-holder
+  &__text-holder {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--Banya-Graphite-500);
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 1.3;
+    @media (min-width: $pc) {
+      -webkit-line-clamp: unset;
+      max-height: 63px;
+      transition: max-height 0.4s ease;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  // .slide-sel-articles__icon-holder
+  &__icon-holder {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 100%;
+    max-width: 16px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: $pc) {
+      max-width: 24px;
+      right: 24px;
+    }
+  }
+  .links {
+    align-self: flex-end;
+    letter-spacing: 0.12px;
+    @media (min-width: $pc) {
+      margin-top: auto;
+      font-size: 12px;
+    }
+  }
+}

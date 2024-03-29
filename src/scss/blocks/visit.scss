@@ -1,0 +1,77 @@
+.visit {
+  padding: 48px 0 32px;
+  background-repeat: no-repeat;
+  background-size: 576px 502px;
+  background-position: center right;
+  background-color: var(--Banya-Brown-50);
+  @media (min-width: $pc) {
+    padding: 128px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  // .visit__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    @media (min-width: $pc) {
+      row-gap: 64px;
+    }
+  }
+  // .visit__header
+  &__header {
+  }
+  // .visit__content
+  &__content {
+  }
+  // .visit__slider
+  &__slider {
+    overflow: visible;
+  }
+  // .visit__wrapper
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media (min-width: $pc) {
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+  }
+  // .visit__slide
+  &__slide {
+  }
+  .demon-card {
+    .button {
+      padding: 12px 8px;
+      font-size: 12px;
+      column-gap: 4px;
+      letter-spacing: 0.12px;
+    }
+  }
+  .heading {
+    // .heading__icon-holder
+    &__icon-holder {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.slider-visit {
+  &__nav {
+    @media (max-width: 1279px) {
+      display: none;
+    }
+  }
+}
+.slide-visit {
+  min-width: 256px;
+  flex: 1 0 0;
+  @media (min-width: $pc) {
+    flex: none;
+    width: 100%;
+    max-width: 776px;
+  }
+}

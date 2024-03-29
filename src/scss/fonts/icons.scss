@@ -1,0 +1,184 @@
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff?s4xudx") format("woff"),
+  url("../fonts/icons.svg?s4xudx#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="_icon-"]:before,
+[class^="_icon-"]:after,
+[class*=" _icon-"]:before,
+[class*=" _icon-"]:after, {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+._icon-ArrowDown:before {
+  content: "\e900";
+}
+._icon-ArrowDownRight:before {
+  content: "\e901";
+}
+._icon-BellSimple:before {
+  content: "\e902";
+}
+._icon-BookmarkSimple:before {
+  content: "\e903";
+}
+._icon-car:before {
+  content: "\e904";
+}
+._icon-car5:before {
+  content: "\e905";
+}
+._icon-CaretDown:before {
+  content: "\e906";
+}
+._icon-CaretLeft:before {
+  content: "\e907";
+}
+._icon-CaretRight:after {
+  content: "\e908";
+}
+._icon-CaretUp:before {
+  content: "\e909";
+}
+._icon-CornersOut:before {
+  content: "\e90a";
+}
+._icon-Download-2:before {
+  content: "\e90b";
+}
+._icon-Download:before {
+  content: "\e90c";
+}
+._icon-Facebook---Dark:before {
+  content: "\e90d";
+}
+._icon-GlobeSimple:before {
+  content: "\e90e";
+}
+._icon-GoogleLogo:before {
+  content: "\e90f";
+}
+._icon-HandPointing:before {
+  content: "\e910";
+}
+._icon-Hash:before {
+  content: "\e911";
+}
+._icon-History:before {
+  content: "\e912";
+}
+._icon-hot-food-1:before {
+  content: "\e913";
+}
+._icon-Instagram---Dark:before {
+  content: "\e914";
+}
+._icon-Ladle:before {
+  content: "\e915";
+}
+._icon-Letter:before {
+  content: "\e916";
+}
+._icon-mdi_location:before {
+  content: "\e917";
+}
+._icon-Minus:before {
+  content: "\e918";
+}
+._icon-MinusCircle:before {
+  content: "\e919";
+}
+._icon-Pause:before {
+  content: "\e91a";
+}
+._icon-Person:before {
+  content: "\e91b";
+}
+._icon-Phone-Calling:before {
+  content: "\e91c";
+}
+._icon-Play:before {
+  content: "\e91d";
+}
+._icon-Plus:before {
+  content: "\e91e";
+}
+._icon-PlusCircle:before {
+  content: "\e91f";
+}
+._icon-Question:before {
+  content: "\e920";
+}
+._icon-Refresh:before {
+  content: "\e921";
+}
+._icon-slippers:before {
+  content: "\e922";
+}
+._icon-Snowflake:before {
+  content: "\e923";
+}
+._icon-Star:before {
+  content: "\e924";
+}
+._icon-Tag:before {
+  content: "\e925";
+}
+._icon-Tea-Cup:before {
+  content: "\e926";
+}
+._icon-Twitter---Dark:before {
+  content: "\e927";
+}
+._icon-User-2:before {
+  content: "\e928";
+}
+._icon-Waves:before {
+  content: "\e929";
+}
+._icon-whatsapp-1:before {
+  content: "\e92a";
+}
+._icon-WhatsappLogo:before {
+  content: "\e92b";
+}
+._icon-X:before {
+  content: "\e92c";
+}
+._icon-YouTube---Dark:before {
+  content: "\e92d";
+}
+._icon-uniE92E:before {
+  content: "\e92e";
+}
+._icon---:before {
+  content: "\e92f";
+}

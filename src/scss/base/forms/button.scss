@@ -1,0 +1,225 @@
+//==== Buttons styles=============================================================================================
+a.button, button.button, span.button {
+  width: fit-content;
+  cursor: pointer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  border-radius: 8px;
+  transition: all 0.4s ease 0s;
+  padding: 12px 8px;
+  @media (min-width: $pc) {
+    column-gap: 8px;
+    padding: 20px 24px;
+    font-size: $fontSize;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+  &::before, &::after {
+    font-size: 16px;
+  }
+  &--primary {
+    color: var(--Banya-Brown-700);
+    background: var(--Banya-Brown-300);
+    &::before, &::after {
+      color: var(--Banya-Brown-700);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background: var(--Banya-Brown-400);
+      }
+    }
+    &:active {
+      color: var(--Banya-Brown-800);
+      background: var(--Banya-Brown-500);
+    }
+    &.blocked {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+  &--secondary {
+    color: var(--Banya-Base-color-White-100);
+    background: var(--Banya-Green-800);
+    &::before, &::after {
+      color: var(--Banya-Base-color-White-100);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background: var(--Banya-Green-700);
+      }
+    }
+    &:active {
+      background: var(--Banya-Green-900);
+    }
+    &.blocked {
+      cursor: default;
+      pointer-events: none;
+      background: var(--Banya-Graphite-600);
+      color: var(--Banya-Graphite-400);
+      &::before, &::after {
+        color: var(--Banya-Graphite-400);
+      }
+    }
+  }
+}
+//==== Links styles=============================================================================================
+a.links, span.links {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease 0s;
+  &::before, &::after {
+    font-size: 16px;
+    transition: all 0.4s ease 0s;
+  }
+  &--brown {
+    column-gap: 8px;
+    color: var(--Banya-Base-color-White-50);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &::before, &::after {
+      transition: all 0.4s ease 0s;
+      color: var(--Banya-Base-color-White-50);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--Banya-Brown-50);
+        &::before, &::after {
+          color: var(--Banya-Brown-50);
+        }
+      }
+    }
+    &:active {
+      color: var(--Banya-Brown-100);
+      &::before, &::after {
+        color: var(--Banya-Brown-100);
+      }
+    }
+    &.blocked {
+      cursor: default;
+      pointer-events: none;
+      color: var(--Banya-Graphite-600);
+      &::before, &::after {
+        color: var(--Banya-Graphite-600);
+      }
+    }
+  }
+  &--green {
+    column-gap: 4px;
+    color: var(--Banya-Green-500);
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    &::before, &::after {
+      color: var(--Banya-Green-500);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--Banya-Brown-50);
+        &::before, &::after {
+          color: var(--Banya-Brown-50);
+        }
+      }
+    }
+    &:active {
+      color: var(--Banya-Brown-100);
+      &::before, &::after {
+        color: var(--Banya-Brown-100);
+      }
+    }
+    @media (min-width: $pc) {
+      column-gap: 8px;
+      font-size: 14px;
+    }
+    .blocked {
+      cursor: default;
+      pointer-events: none;
+      color: var(--Banya-Graphite-600);
+      &::before, &::after {
+        color: var(--Banya-Graphite-600);
+      }
+    }
+  }
+  &--graphite {
+    color: var(--Banya-Graphite-600);
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    column-gap: 4px;
+    &::before, &::after {
+      color: var(--Banya-Graphite-600);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--Banya-Green-600);
+        &::before, &::after {
+          color: var(--Banya-Green-600);
+        }
+      }
+    }
+    &:active {
+      color: var(--Banya-Green-800);
+      &::before, &::after {
+        color: var(--Banya-Green-800);
+      }
+    }
+    @media (min-width: $pc) {
+      font-size: $fontSize;
+      letter-spacing: 1px;
+      column-gap: 8px;
+    }
+    &.blocked {
+      cursor: default;
+      pointer-events: none;
+      color: var(--Banya-Graphite-200);
+      &::before, &::after {
+        color: var(--Banya-Graphite-200);
+      }
+    }
+  }
+  &--footer {
+    color: var(--Banya-Graphite-600);
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 1.4;
+    column-gap: 8px;
+    text-transform: lowercase;
+    &::before, &::after {
+      color: var(--Banya-Graphite-600);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--Banya-Green-600);
+        &::before, &::after {
+          color: var(--Banya-Green-600);
+        }
+      }
+    }
+    &:active {
+      color: var(--Banya-Green-800);
+      &::before, &::after {
+        color: var(--Banya-Green-800);
+      }
+    }
+    @media (min-width: $pc) {
+      font-size: $fontSize;
+    }
+    &.blocked {
+      cursor: default;
+      pointer-events: none;
+      color: var(--Banya-Graphite-200);
+      &::before, &::after {
+        color: var(--Banya-Graphite-200);
+      }
+    }
+  }
+}
