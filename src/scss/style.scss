@@ -129,6 +129,8 @@ body {
   }
   @media (min-width: 1921px) {
     max-width: 1920px;
+    //max-width: 1920px !important;
+    //margin: 0 auto !important;
   }
 }
 ::-webkit-scrollbar {
