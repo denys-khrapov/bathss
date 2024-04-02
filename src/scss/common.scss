@@ -572,7 +572,6 @@
   &__title {
     color: var(--Banya-Graphite-800);
     line-height: 1.2;
-    text-transform: uppercase;
     text-align: left;
     padding: 12px 24px 12px 8px;
     width: 100%;
@@ -595,6 +594,11 @@
     &:not(:last-child) {
       margin-bottom: 8px;
     }
+    @media (min-width: $pc) {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
     p {
       &:not(:last-child) {
         margin-bottom: 21px;
@@ -608,6 +612,7 @@
     position: absolute;
     top: 12.5px;
     right: 5px;
+    cursor: pointer;
     &::before {
       content: "";
       position: absolute;
