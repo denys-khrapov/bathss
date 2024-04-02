@@ -102,6 +102,25 @@ export function main() {
 				}
 			}
 		})
+		let swiperLogos = new Swiper('.slider-logos', {
+			mousewheel: true,
+			slidesPerView: 'auto',
+			spaceBetween: 16,
+			loop: false,
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			navigation: {
+				nextEl: '.slider-logos__nav .swiper-button-next',
+				prevEl: '.slider-logos__nav .swiper-button-prev',
+			},
+			breakpoints: {
+				1280: {
+					spaceBetween: 24,
+				},
+			}
+		})
 		let swiperSelArticles = new Swiper('.slider-sel-articles', {
 			mousewheel: true,
 			slidesPerView: 'auto',
