@@ -1,4 +1,5 @@
 .logos {
+  position: relative;
   padding: 64px 0 48px;
   background-repeat: no-repeat;
   background-size: 288px 252px;
@@ -11,6 +12,8 @@
   }
   // .logos__container
   &__container {
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -42,7 +45,7 @@
     }
     // .heading__title-box
     &__title-box {
-      flex: none;
+      flex: 1 0 100%;
       @media (min-width: $pc) {
         max-width: 100%;
         min-width: unset;
@@ -55,6 +58,87 @@
     // .heading__right-col
     &__right-col {
     }
+  }
+  // .logos__content
+  &__content {
+  }
+  // .logos__slider
+  &__slider {
+    overflow: visible;
+  }
+  // .logos__wrapper
+  &__wrapper {
+  }
+  // .logos__slide
+  &__slide {
+  }
+  .swiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+  }
+}
+.slider-logos {
+  &__nav {
+    @media (min-width: $pc) {
+      .swiper-button-prev, .swiper-button-next, .swiper-scrollbar {
+        margin-top: 48px;
+      }
+    }
+  }
+}
+.slide-logos {
+  width: 100%;
+  max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  // .slide-logos__image-holder
+  &__image-holder {
+    border-radius: 16px;
+    background: var(--Banya-Base-color-White-25, rgba(255, 255, 255, 0.25));
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .slide-logos__content
+  &__content {
+    padding-left: 16px;
+    position: relative;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 38px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: -1;
+    }
+    &::before {
+      top: -12px;
+      left: 0;
+    }
+    &::after {
+      bottom: -12px;
+      right: 0;
+    }
+  }
+  // .slide-logos__text-holder
+  &__text-holder {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    color: var(--Banya-Graphite-source);
+    text-overflow: ellipsis;
+    font-weight: 200;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
   }
 }
 .item-logos {

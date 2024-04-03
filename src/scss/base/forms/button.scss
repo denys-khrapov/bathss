@@ -1,4 +1,3 @@
-//==== Buttons styles=============================================================================================
 a.button, button.button, span.button {
   width: fit-content;
   cursor: pointer;
@@ -29,7 +28,7 @@ a.button, button.button, span.button {
     &::before, &::after {
       color: var(--Banya-Brown-700);
     }
-    @media (any-hover: hover) {
+    @media (min-width: $pc) {
       &:hover {
         background: var(--Banya-Brown-400);
       }
@@ -49,7 +48,7 @@ a.button, button.button, span.button {
     &::before, &::after {
       color: var(--Banya-Base-color-White-100);
     }
-    @media (any-hover: hover) {
+    @media (min-width: $pc) {
       &:hover {
         background: var(--Banya-Green-700);
       }
@@ -68,7 +67,6 @@ a.button, button.button, span.button {
     }
   }
 }
-//==== Links styles=============================================================================================
 a.links, span.links {
   width: fit-content;
   display: flex;
@@ -88,7 +86,7 @@ a.links, span.links {
       transition: all 0.4s ease 0s;
       color: var(--Banya-Base-color-White-50);
     }
-    @media (any-hover: hover) {
+    @media (min-width: $pc) {
       &:hover {
         color: var(--Banya-Brown-50);
         &::before, &::after {
@@ -121,7 +119,7 @@ a.links, span.links {
     &::before, &::after {
       color: var(--Banya-Green-500);
     }
-    @media (any-hover: hover) {
+    @media (min-width: $pc) {
       &:hover {
         color: var(--Banya-Brown-50);
         &::before, &::after {
@@ -158,7 +156,7 @@ a.links, span.links {
     &::before, &::after {
       color: var(--Banya-Graphite-600);
     }
-    @media (any-hover: hover) {
+    @media (min-width: $pc) {
       &:hover {
         color: var(--Banya-Green-600);
         &::before, &::after {
@@ -196,7 +194,7 @@ a.links, span.links {
     &::before, &::after {
       color: var(--Banya-Graphite-600);
     }
-    @media (any-hover: hover) {
+    @media (min-width: $pc) {
       &:hover {
         color: var(--Banya-Green-600);
         &::before, &::after {
