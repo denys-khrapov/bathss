@@ -1,0 +1,101 @@
+.heading-main {
+  // .heading-main--padding-96
+  &--padding-96{
+    padding: 16px 0 48px;
+  }
+  // .heading-main__container
+  &__container {
+  }
+  // .heading-main__content
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 48px;
+    row-gap: 24px;
+    @media (min-width: $pc) {
+        column-gap: 124px;
+    }
+  }
+  // .heading-main__left-col
+  &__left-col {
+    flex: 1 0 0;
+    min-width: 256px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    @media (min-width: $pc) {
+        max-width: 476px;
+    }
+  }
+  // .heading-main__title-box
+  &__title-box {
+    position: relative;
+    padding-left: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 2px;
+      background: var(--Banya-Brown-50);
+    }
+  }
+  // .heading-main__title
+  &__title {
+    color: var(--Banya-Brown-50);
+    font-family: "Jeferson", sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+  // .heading-main__text-holder
+  &__text-holder {
+    font-weight: 200;
+  }
+  // .heading-main__right-col
+  &__right-col {
+    flex: 1 0 0;
+    min-width: 256px;
+  }
+  // .heading-main__image-holder
+  // .heading-main__video-holder
+  &__image-holder,&__video-holder {
+    width: 100%;
+    display: inline-block;
+    height: 376px;
+    position: relative;
+    @media (min-width: $pc) {
+      height: 576px;
+    }
+    &::before{
+    	content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(181deg, rgba(20, 18, 13, 0.75) 0.98%, rgba(20, 18, 13, 0.25) 99.05%);
+    }
+    img,video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.25);
+    }
+  }
+  .button {
+    padding: 20px 16px;
+    column-gap: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+}
+.container {
+}
+.paragraph {
+}

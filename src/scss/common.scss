@@ -484,7 +484,7 @@
     transform: translate(-52px, 48px);
   }
 }
-.modal-image {
+.modal-image, .modal-video {
   width: 100%;
   max-width: 800px;
   border-radius: 16px;
@@ -495,10 +495,10 @@
     padding: 16px;
     border-radius: 24px;
   }
-  &__image-holder {
+  &__image-holder,&__video-holder {
     width: 100%;
     height: 552px;
-    img {
+    img,video {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -506,7 +506,7 @@
     }
     @media (min-width: $pc) {
       height: 644px;
-      img {
+      img,video {
         border-radius: 16px;
       }
     }
@@ -653,3 +653,75 @@
   background-size: 200px 200px;
   background-repeat: repeat;
 }
+.breadcrumbs {
+  padding: 128px 0 32px;
+  @media (min-width: $pc) {
+      padding: 32px 0;
+  }
+  // .breadcrumbs__container
+  &__container {
+    & > span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      width: fit-content;
+      padding: 7px;
+      border-radius: 8px;
+      border: 1px solid var(--Banya-Base-color-White-10);
+      @media (min-width: $pc) {
+        padding: 15px;
+        border-radius: 12px;
+        & > span:hover +.brDevider{
+          svg{
+            path{
+              fill: var(--Banya-Brown-50);
+            }
+          }
+        }
+      }
+      & > span:active +.brDevider{
+        svg{
+          path{
+            fill: var(--Banya-Brown-100);
+          }
+        }
+      }
+    }
+    a{
+      color: var(--Banya-Green-500);
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: 0.12px;
+      text-transform: uppercase;
+      transition: color 0.4s;
+      @media (min-width: $pc) {
+          &:hover{
+            color: var(--Banya-Brown-50);
+          }
+      }
+      &:active{
+        color: var(--Banya-Brown-100);
+      }
+    }
+  }
+  .brDevider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    svg{
+      path{
+        transition: fill 0.4s;
+      }
+    }
+  }
+  .breadcrumb_last {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+  }
+}
+
