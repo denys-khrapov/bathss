@@ -80,6 +80,17 @@
         border-radius: 16px;
       }
     }
+    &--desk {
+      display: none;
+      @media (min-width: $pc) {
+        display: block;
+      }
+    }
+    &--mob {
+      @media (min-width: $pc) {
+        display: none;
+      }
+    }
   }
   // .card-cel__content
   &__content {

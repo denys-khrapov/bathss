@@ -1,5 +1,15 @@
 export function main() {
-	initSwiper();
+	if (
+			document.querySelector('.slider-awards') ||
+			document.querySelector('.slider-senses') ||
+			document.querySelector('.slider-visit') ||
+			document.querySelector('.slider-hashtag') ||
+			document.querySelector('.slider-logos') ||
+			document.querySelector('.slider-sel-articles')
+	) {
+		initSwiper();
+	}
+
 	initHoverNewsCard();
 	initPauseButton();
 	openAllAccordionItems();
