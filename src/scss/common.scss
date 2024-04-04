@@ -274,7 +274,7 @@
     width: 100%;
     max-width: 376px;
     @media (min-width: $pc) {
-      max-width: 476px;
+      max-width: 676px;
     }
   }
   // .heading__logo-holder
@@ -353,12 +353,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 16px;
     width: 32px;
     height: 32px;
     font-size: 16px;
     color: var(--Banya-Graphite-600);
     transition: all 0.4s ease 0s;
+    @media (min-width: $pc) {
+      margin-top: 32px;
+    }
     @media (any-hover: hover) {
       &:hover {
         &::before, &::after {
@@ -386,14 +389,28 @@
   }
   .swiper-scrollbar {
     position: static;
-    margin-top: 32px;
+    margin-top: 16px;
+    height: 2px;
+    @media (min-width: $pc) {
+      margin-top: 32px;
+    }
     &.swiper-lock {
       display: none;
     }
+    &--lighter{
+      background: var(--Banya-Base-color-Black-3);
+      .swiper-scrollbar-drag {
+        background: var(--Banya-Brown-100);
+      }
+    }
+    &--darker{
+      background: var(--Banya-Base-color-White-5);
+      .swiper-scrollbar-drag {
+        background: var(--Banya-Base-color-White-10);
+      }
+    }
   }
-  .swiper-scrollbar-drag {
-    background: var(--Banya-Brown-300);
-  }
+
   // .nav-slider__scrollbar-wrapper
   &__scrollbar-wrapper {
     width: 100%;

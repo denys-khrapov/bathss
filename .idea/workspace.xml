@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="update">
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added breadcrumbs, heading-main section and styles">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_common.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_common.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog-article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_head.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_head.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_js.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_js.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_awards.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_awards.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_celebrities.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_celebrities.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_logos.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_logos.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_sel-articles.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_sel-articles.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_senses.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_senses.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_visit.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_visit.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/gsap-animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/gsap-animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/fonts/icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/fonts/icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/page/blog/small__header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/page/blog/small__header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +37,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="HTML File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,7 +101,11 @@
       <workItem from="1712151033625" duration="580000" />
       <workItem from="1712151669224" duration="31000" />
       <workItem from="1712151940629" duration="5977000" />
-      <workItem from="1712175981679" duration="4292000" />
+      <workItem from="1712175981679" duration="4991000" />
+      <workItem from="1712215821710" duration="12855000" />
+      <workItem from="1712231636787" duration="905000" />
+      <workItem from="1712232661978" duration="1181000" />
+      <workItem from="1712249614286" duration="10889000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -118,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712136173259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added breadcrumbs, heading-main section and styles">
+      <option name="closed" value="true" />
+      <created>1712182313512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712182313512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +157,7 @@
     <MESSAGE value="Update main js" />
     <MESSAGE value="Update style scss" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="added breadcrumbs, heading-main section and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added breadcrumbs, heading-main section and styles" />
   </component>
 </project>
