@@ -27,6 +27,7 @@ export function main() {
 	});
 
 
+
 	// Mobile Menu
 	const iconMenu = document.querySelector('.menu-button');
 	const menuBody = document.querySelector('.sidebar-menu');
@@ -219,38 +220,6 @@ export function main() {
 		});
 	}
 
-	let accordionSidebar = document.querySelector('.sidebar-menu .accordion__wrapper');
-	let windowWidth = window.innerWidth;
-	if (windowWidth >= 1280) {
-		// sideBarAccordion closing on page scroll
-		let isCursorOnSidebar = false;
-
-		document.querySelector('.sidebar-menu').addEventListener('mouseenter', () => {
-			isCursorOnSidebar = true;
-		});
-		document.querySelector('.sidebar-menu').addEventListener('mouseleave', () => {
-			isCursorOnSidebar = false;
-		});
-
-		window.addEventListener('scroll', () => {
-			if (!isCursorOnSidebar && accordionSidebar.classList.contains('accordion-active')) {
-				closeSidebarAccordion();
-			}
-		});
-	}
-
-	function closeSidebarAccordion() {
-		let accordionTitle = accordionSidebar.querySelector('.accordion__title');
-		let accordionContent = accordionSidebar.querySelector('.accordion__content');
-
-		accordionTitle.classList.remove('active');
-		accordionContent.style.maxHeight = null;
-		accordionSidebar.classList.remove('accordion-active');
-
-		accordionTitle.classList.add('_icon-PlusCircle');
-		accordionTitle.classList.remove('_icon-MinusCircle');
-	}
-
 	function initHoverNewsCard() {
 		let windowWidth = window.innerWidth;
 		if (windowWidth >= 1280) {
@@ -310,7 +279,6 @@ export function main() {
 				slide.classList.add('slide-image-accordion--full');
 			});
 		});
-
 		// imageAccIconClose.forEach((icon) => {
 		// 	icon.addEventListener('click', (e) => {
 		// 		e.stopPropagation();
@@ -326,5 +294,45 @@ export function main() {
 		// 	});
 		// });
 	}
+
+	jQuery(document).ready(function ($) {
+		let accordionSidebar = $('.sidebar-menu .accordion__wrapper');
+		let windowWidth = $(window).width();
+		let sidebarMenu = $('.sidebar-menu');
+		let menuItemHasChildren = $('.menu-item-has-children > a');
+		menuItemHasChildren.append('<span class="menu-item-has-children__icon"></span>');
+		subMenuOpen();
+
+		function subMenuOpen() {
+			menuItemHasChildren.click(function (e) {
+				e.preventDefault();
+				$(this).toggleClass('active');
+				$('.sub-menu').slideToggle(300);
+			});
+		}
+		function subMenuClose() {
+			console.log(1)
+			menuItemHasChildren.removeClass('active');
+			$('.sub-menu').slideUp(300);
+		}
+
+		if (windowWidth >= 1280) {
+			let isCursorOnSidebar = false;
+
+			sidebarMenu.mouseenter(function () {
+				isCursorOnSidebar = true;
+			});
+
+			sidebarMenu.mouseleave(function () {
+				isCursorOnSidebar = false;
+			});
+
+			$(window).scroll(function () {
+				if (!isCursorOnSidebar) {
+					subMenuClose();
+				}
+			});
+		}
+	});
 
 }

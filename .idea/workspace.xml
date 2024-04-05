@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added breadcrumbs, heading-main section and styles">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added image-accordion section and styles, update files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog-article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_head.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_head.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_js.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_js.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_awards.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_awards.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_celebrities.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_celebrities.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_logos.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_logos.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_sel-articles.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_sel-articles.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_senses.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_senses.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_visit.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_visit.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/gsap-animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/gsap-animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_common.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_common.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_sidebar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_sidebar.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/text.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sidebar-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sidebar-menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
     </list>
@@ -105,7 +93,8 @@
       <workItem from="1712215821710" duration="12855000" />
       <workItem from="1712231636787" duration="905000" />
       <workItem from="1712232661978" duration="1181000" />
-      <workItem from="1712249614286" duration="10889000" />
+      <workItem from="1712249614286" duration="11434000" />
+      <workItem from="1712304144804" duration="21685000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -147,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712182313512</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added image-accordion section and styles, update files">
+      <option name="closed" value="true" />
+      <created>1712267434178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712267434178</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +155,7 @@
     <MESSAGE value="Update style scss" />
     <MESSAGE value="update" />
     <MESSAGE value="added breadcrumbs, heading-main section and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added breadcrumbs, heading-main section and styles" />
+    <MESSAGE value="added image-accordion section and styles, update files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added image-accordion section and styles, update files" />
   </component>
 </project>
