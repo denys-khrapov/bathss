@@ -33,33 +33,6 @@
     width: calc(100% - 52px);
   }
 }
-.heading {
-  // .heading--dark
-  &--dark {
-  }
-  // .heading__top
-  &__top {
-  }
-  // .heading__title-box
-  &__title-box {
-  }
-  // .heading__subtitle
-  &__subtitle {
-  }
-  // .heading__title
-  &__title {
-  }
-  // .heading__right-col
-  &__right-col {
-  }
-  // .heading__icon-holder
-  &__icon-holder {
-  }
-}
-.heading-subtitle {
-}
-.heading-title {
-}
 .item-tickets {
   display: flex;
   flex-direction: column;
@@ -392,11 +365,4 @@
     font-weight: 200;
     line-height: 1.4;
   }
-}
-.button {
-  // .button--primary
-  &--primary {
-  }
-}
-._icon-CaretRight {
 }

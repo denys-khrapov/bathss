@@ -68,6 +68,9 @@ a.button, button.button, span.button {
   }
 }
 a.links, span.links {
+  column-gap: 8px;
+  line-height: 1.2;
+  font-weight: 300;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -77,9 +80,7 @@ a.links, span.links {
     transition: all 0.4s ease 0s;
   }
   &--brown {
-    column-gap: 8px;
     color: var(--Banya-Base-color-White-50);
-    font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
     &::before, &::after {
@@ -110,10 +111,8 @@ a.links, span.links {
     }
   }
   &--green {
-    column-gap: 4px;
     color: var(--Banya-Green-500);
     font-size: 12px;
-    font-weight: 300;
     letter-spacing: 0.12px;
     text-transform: uppercase;
     &::before, &::after {
@@ -149,10 +148,8 @@ a.links, span.links {
   &--graphite {
     color: var(--Banya-Graphite-600);
     font-size: 12px;
-    font-weight: 300;
     letter-spacing: 0.12px;
     text-transform: uppercase;
-    column-gap: 4px;
     &::before, &::after {
       color: var(--Banya-Graphite-600);
     }

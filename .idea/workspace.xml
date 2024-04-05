@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added image-accordion section and styles, update files">
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added tickets section and styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_common.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_common.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_sidebar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_sidebar.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sidebar-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sidebar-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/noise-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/noise-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/tickets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/tickets.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
     </list>
@@ -94,7 +93,8 @@
       <workItem from="1712231636787" duration="905000" />
       <workItem from="1712232661978" duration="1181000" />
       <workItem from="1712249614286" duration="11434000" />
-      <workItem from="1712304144804" duration="21685000" />
+      <workItem from="1712304144804" duration="21881000" />
+      <workItem from="1712340419174" duration="8491000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -144,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712267434178</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added tickets section and styles">
+      <option name="closed" value="true" />
+      <created>1712331606357</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712331606357</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +164,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="added breadcrumbs, heading-main section and styles" />
     <MESSAGE value="added image-accordion section and styles, update files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added image-accordion section and styles, update files" />
+    <MESSAGE value="added tickets section and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tickets section and styles" />
   </component>
 </project>

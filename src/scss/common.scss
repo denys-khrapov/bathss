@@ -669,6 +669,8 @@
   left: 0;
   background-size: 200px 200px;
   background-repeat: repeat;
+  opacity: 0.1;
+  pointer-events: none;
 }
 .breadcrumbs {
   padding: 128px 0 32px;
