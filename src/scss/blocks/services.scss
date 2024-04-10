@@ -1,0 +1,193 @@
+.services {
+  position: relative;
+  background-color: var(--Banya-Brown-50);
+  padding: 64px 0;
+  @media (min-width: $pc) {
+    padding: 96px 0;
+  }
+  // .services__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    @media (min-width: $pc) {
+      row-gap: 32px;
+    }
+  }
+  // .services__heading
+  &__heading {
+  }
+  // .services__service-card
+  &__service-card {
+    &.service-card {
+      @media (min-width: 592px) {
+        width: calc(50% - 8px);
+        flex: none;
+      }
+      @media (min-width: $pc) {
+        width: calc(50% - 12px);
+      }
+      @media (min-width: 1715px) {
+        flex-wrap: nowrap;
+      }
+      &--big{
+        @media (min-width: $pc) {
+            flex-direction: column;
+        }
+        @media (min-width: 1715px) {
+            flex-direction: row;
+        }
+      }
+    }
+  }
+  // .services__filter-heading
+  &__filter-heading {
+    padding: 12px 0;
+    @media (min-width: $pc) {
+      padding: 24px 0;
+    }
+  }
+  // .services__content
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media (min-width: $pc) {
+        gap: 24px;
+    }
+  }
+}
+.container {
+}
+.heading {
+  // .heading__top
+  &__top {
+  }
+  // .heading__title-box
+  &__title-box {
+  }
+  // .heading__title
+  &__title {
+  }
+}
+.heading-title {
+}
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: $pc) {
+    gap: 12px;
+    justify-content: normal;
+  }
+  // .filter-heading__left-col
+  &__left-col {
+  }
+  // .filter-heading__right-col
+  &__right-col {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  // .filter-heading__line
+  &__line {
+    display: none;
+    @media (min-width: $pc) {
+      display: block;
+      flex: 1 0 0;
+      position: relative;
+      span {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 1px dashed var(--Banya-Graphite-100);
+        &::after{
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(-50%) rotate(45deg);
+          width: 8px;
+          height: 8px;
+          border-top: 1px solid var(--Banya-Graphite-100);
+          border-right: 1px solid var(--Banya-Graphite-100);
+        }
+      }
+    }
+  }
+  // .filter-heading__gender
+  &__gender {
+    padding: 10px 8px;
+    color: var(--Banya-Graphite-600);
+    font-size: $fontSize;
+    font-weight: 200;
+    line-height: 1.4;
+    border-radius: 10px;
+    border: 1px solid var(--Banya-Graphite-100);
+    background: transparent;
+    transition: color 0.4s, background 0.4s;
+    cursor: pointer;
+    // .filter-heading__gender--active
+    &--active {
+      color: var(--Banya-Brown-50);
+      background: var(--Banya-Graphite-source);
+    }
+    @media (min-width: $pc) {
+      &:hover {
+        color: var(--Banya-Brown-50);
+        background: var(--Banya-Graphite-source);
+      }
+    }
+  }
+  .facetwp-facet {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+.filter .facetwp-facet, .filter .facetwp-radio, .filter .facetwp-checkbox {
+  margin: 0;
+}
+.filter {
+  .facetwp-counter {
+    display: none;
+  }
+  .facetwp-radio {
+    padding: 10px 8px;
+    color: var(--Banya-Graphite-600);
+    font-size: $fontSize;
+    font-weight: 200;
+    line-height: 1.4;
+    border-radius: 10px;
+    border: 1px solid var(--Banya-Graphite-100);
+    background: transparent;
+    transition: color 0.4s, background 0.4s;
+    cursor: pointer;
+    &.checked {
+      color: var(--Banya-Brown-50);
+      background: var(--Banya-Graphite-source);
+    }
+    @media (min-width: $pc) {
+      &:hover {
+        color: var(--Banya-Brown-50);
+        background: var(--Banya-Graphite-source);
+      }
+    }
+  }
+}
+.facetwp-facet {
+}
+.facetwp-facet-area_filter {
+}
+.facetwp-type-radio {
+}
+.facetwp-radio {
+}
+.checked {
+}
+.facetwp-display-value {
+}
+.facetwp-counter {
+}

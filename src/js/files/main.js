@@ -19,13 +19,14 @@ export function main() {
 	initPauseButton();
 	openAllAccordionItems();
 	hoverLastChildimageAcc();
+	showTooltip();
+	changeGender();
 	Fancybox.bind('[data-fancybox]', {
 		Toolbar: false,
 		Thumbs: {
 			type: 'classic'
 		},
 	});
-
 
 
 	// Mobile Menu
@@ -295,6 +296,50 @@ export function main() {
 		// });
 	}
 
+	function showTooltip() {
+		if (window.innerWidth <= 1279) {
+			const priceContainer = document.querySelectorAll('.price-container');
+
+			priceContainer.forEach(priceContainer => {
+				const tooltipBox = priceContainer.querySelector('.tooltip-box');
+				const closeTooltipBox = priceContainer.querySelector('.tooltip-box__close');
+				if (tooltipBox && closeTooltipBox) {
+					priceContainer.addEventListener('click', () => {
+						tooltipBox.classList.add('show');
+					});
+					closeTooltipBox.addEventListener('click', (e) => {
+						e.stopPropagation();
+						tooltipBox.classList.remove('show');
+					});
+				}
+			});
+		}
+	}
+
+	function changeGender() {
+		const filterGenderActive = document.querySelector('.filter-heading__gender--active');
+		const filterGender = document.querySelectorAll('.filter-heading__gender');
+		const badgeGender = document.querySelectorAll('.badge--gender');
+
+		const filterText = filterGenderActive.textContent;
+
+		badgeGender.forEach(badge => {
+			badge.textContent = filterText;
+		});
+		filterGender.forEach(btn => {
+			btn.addEventListener('click', () => {
+				filterGender.forEach(button => {
+					button.classList.remove('filter-heading__gender--active');
+				});
+				btn.classList.add('filter-heading__gender--active');
+				let filterText = btn.textContent;
+				badgeGender.forEach(badge => {
+					badge.textContent = filterText;
+				});
+			});
+		});
+	}
+
 	jQuery(document).ready(function ($) {
 		let accordionSidebar = $('.sidebar-menu .accordion__wrapper');
 		let windowWidth = $(window).width();
@@ -310,8 +355,8 @@ export function main() {
 				$('.sub-menu').slideToggle(300);
 			});
 		}
+
 		function subMenuClose() {
-			console.log(1)
 			menuItemHasChildren.removeClass('active');
 			$('.sub-menu').slideUp(300);
 		}

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added tickets section and styles">
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added two column section and styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/noise-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/noise-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/tickets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/tickets.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_common.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_common.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_sidebar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_sidebar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_two-column.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_two-column.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icon-person.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
@@ -94,7 +97,17 @@
       <workItem from="1712232661978" duration="1181000" />
       <workItem from="1712249614286" duration="11434000" />
       <workItem from="1712304144804" duration="21881000" />
-      <workItem from="1712340419174" duration="8491000" />
+      <workItem from="1712340419174" duration="8611000" />
+      <workItem from="1712392408144" duration="1131000" />
+      <workItem from="1712398863637" duration="5839000" />
+      <workItem from="1712406769971" duration="3906000" />
+      <workItem from="1712488391736" duration="52000" />
+      <workItem from="1712559649821" duration="19271000" />
+      <workItem from="1712595446529" duration="551000" />
+      <workItem from="1712646762185" duration="6897000" />
+      <workItem from="1712735444670" duration="13360000" />
+      <workItem from="1712766006379" duration="2903000" />
+      <workItem from="1712773165200" duration="2309000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -152,11 +165,30 @@
       <option name="project" value="LOCAL" />
       <updated>1712331606357</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added two column section and styles">
+      <option name="closed" value="true" />
+      <created>1712352211519</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712352211519</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update main js" />
@@ -165,6 +197,7 @@
     <MESSAGE value="added breadcrumbs, heading-main section and styles" />
     <MESSAGE value="added image-accordion section and styles, update files" />
     <MESSAGE value="added tickets section and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tickets section and styles" />
+    <MESSAGE value="added two column section and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added two column section and styles" />
   </component>
 </project>

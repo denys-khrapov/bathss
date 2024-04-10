@@ -20,6 +20,10 @@
     flex-wrap: wrap;
     column-gap: 124px;
     row-gap: 48px;
+    // .two-column__content--smallest-gap
+    &--smallest-gap {
+      gap: 24px;
+    }
   }
   // .two-column__left-col
   &__left-col {
@@ -30,6 +34,11 @@
     row-gap: 32px;
     @media (min-width: $pc) {
       row-gap: 48px;
+    }
+    &--largest-gap {
+      @media (min-width: $pc) {
+        row-gap: 64px;
+      }
     }
   }
   // .two-column__image-holder
@@ -46,6 +55,16 @@
     }
     @media (min-width: $pc) {
       height: 376px;
+      img{
+        border-radius: 24px;
+      }
+    }
+    //.two-column__image-holder--largest
+    &--largest {
+      height: 376px;
+      @media (min-width: $pc) {
+        height: 476px;
+      }
     }
   }
   // .two-column__text-box
@@ -65,6 +84,11 @@
     row-gap: 32px;
     @media (min-width: $pc) {
       row-gap: 48px;
+    }
+    &--largest-gap {
+      @media (min-width: $pc) {
+        row-gap: 64px;
+      }
     }
   }
   .heading {
@@ -99,9 +123,41 @@
   @media (min-width: $pc) {
     row-gap: 24px;
   }
+  // .text-box--smallest-gap
+  &--smallest-gap {
+    .text-box__heading {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+      &::after {
+        bottom: -8px;
+      }
+      @media (min-width: $pc) {
+        &::after {
+          bottom: -12px;
+        }
+      }
+    }
+  }
+  // .text-box__art-heading
+  &__art-heading {
+    color: var(--Banya-Brown-500);
+    font-family: "Jeferson", sans-serif;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @media (min-width: $pc) {
+      font-size: 16px;
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+  }
   // .text-box__heading
   &__heading {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
     &::after {
       content: "";
       position: absolute;
@@ -114,16 +170,17 @@
       margin-bottom: 16px;
     }
     @media (min-width: $pc) {
+      row-gap: 24px;
       &:not(:last-child) {
         margin-bottom: 24px;
       }
-      &::after{
+      &::after {
         bottom: -24px;
       }
     }
   }
-  // .text-box__number
-  &__number {
+  // .text-box__element
+  &__element {
     position: absolute;
     z-index: -1;
     width: 100px;
@@ -150,10 +207,41 @@
     line-height: 1.2;
     letter-spacing: 1px;
     text-transform: uppercase;
+    // .text-box__title--largest
+    &--largest {
+      @media (min-width: $pc) {
+        font-size: 32px;
+      }
+    }
+    &--mb {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+      @media (min-width: $pc) {
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+  // .text-box__paragraph
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    @media (min-width: $pc) {
+      row-gap: 12px;
+    }
   }
   // .text-box__subtitle
   &__subtitle {
     line-height: 1.2;
+    &--largest {
+      @media (min-width: $pc) {
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+    }
   }
   // .text-box__text-holder
   &__text-holder {
@@ -174,6 +262,18 @@
         font-size: $fontSize;
         font-weight: 200;
         line-height: 1.5;
+      }
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    @media (min-width: $pc) {
+      p {
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
       }
     }
   }
@@ -289,6 +389,32 @@
   position: relative;
   display: flex;
   gap: 4px;
+  // .price-container--including
+  &--including {
+    gap: 8px;
+    @media (min-width: $pc) {
+        gap: 16px;
+    }
+    .price-container-inner__current-price{
+      @media (min-width: $pc) {
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: normal;
+      }
+    }
+    .old-price-box__icon-holder {
+      width: 16px;
+      height: 16px;
+      @media (min-width: $pc) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  // .price-container__tooltip-box
+  &__tooltip-box {
+  }
   // .price-container__icon-holder
   &__icon-holder {
     position: absolute;
