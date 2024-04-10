@@ -397,20 +397,19 @@
     &.swiper-lock {
       display: none;
     }
-    &--lighter{
+    &--lighter {
       background: var(--Banya-Base-color-Black-3);
       .swiper-scrollbar-drag {
         background: var(--Banya-Brown-100);
       }
     }
-    &--darker{
+    &--darker {
       background: var(--Banya-Base-color-White-5);
       .swiper-scrollbar-drag {
         background: var(--Banya-Base-color-White-10);
       }
     }
   }
-
   // .nav-slider__scrollbar-wrapper
   &__scrollbar-wrapper {
     width: 100%;
@@ -512,10 +511,10 @@
     padding: 16px;
     border-radius: 24px;
   }
-  &__image-holder,&__video-holder {
+  &__image-holder, &__video-holder {
     width: 100%;
     height: 552px;
-    img,video {
+    img, video {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -523,7 +522,7 @@
     }
     @media (min-width: $pc) {
       height: 644px;
-      img,video {
+      img, video {
         border-radius: 16px;
       }
     }
@@ -604,14 +603,19 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
+    @media (min-width: $pc) {
+      padding-left: 32px;
+    }
   }
   // .accordion__text-holder
   &__text-holder {
+    font-weight: 200;
     margin-top: 16px;
     &:not(:last-child) {
       margin-bottom: 8px;
     }
     @media (min-width: $pc) {
+      font-size: $fontSize;
       &:not(:last-child) {
         margin-bottom: 16px;
       }
@@ -660,6 +664,18 @@
       right: 16px;
     }
   }
+  // .accordion__link-box
+  &__link-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media (min-width: $pc) {
+      gap: 16px;
+    }
+  }
+  // .accordion__link
+  &__link {
+  }
 }
 .noise-bg {
   position: absolute;
@@ -675,7 +691,7 @@
 .breadcrumbs {
   padding: 128px 0 32px;
   @media (min-width: $pc) {
-      padding: 32px 0;
+    padding: 32px 0;
   }
   // .breadcrumbs__container
   &__container {
@@ -690,23 +706,23 @@
       @media (min-width: $pc) {
         padding: 15px;
         border-radius: 12px;
-        & > span:hover +.brDevider{
-          svg{
-            path{
+        & > span:hover + .brDevider {
+          svg {
+            path {
               fill: var(--Banya-Brown-50);
             }
           }
         }
       }
-      & > span:active +.brDevider{
-        svg{
-          path{
+      & > span:active + .brDevider {
+        svg {
+          path {
             fill: var(--Banya-Brown-100);
           }
         }
       }
     }
-    a{
+    a {
       color: var(--Banya-Green-500);
       font-size: 12px;
       font-weight: 300;
@@ -715,11 +731,11 @@
       text-transform: uppercase;
       transition: color 0.4s;
       @media (min-width: $pc) {
-          &:hover{
-            color: var(--Banya-Brown-50);
-          }
+        &:hover {
+          color: var(--Banya-Brown-50);
+        }
       }
-      &:active{
+      &:active {
         color: var(--Banya-Brown-100);
       }
     }
@@ -729,8 +745,8 @@
     align-items: center;
     justify-content: center;
     margin-right: 12px;
-    svg{
-      path{
+    svg {
+      path {
         transition: fill 0.4s;
       }
     }
@@ -746,7 +762,7 @@
 .images-container {
   width: 100%;
   height: 376px;
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -759,7 +775,7 @@
   left: 0;
   border-radius: 12px;
   //background: var(--Banya-Graphite-50);
-  background: #cbcbcb;
+  background: #CBCBCB;
   padding: 8px 24px 8px 12px;
   width: 100%;
   max-width: 240px;
@@ -783,7 +799,7 @@
     height: 20px;
     transform: rotate(45deg);
     //background: var(--Banya-Graphite-50);
-    background: #cbcbcb;
+    background: #CBCBCB;
   }
   // .tooltip-box__text-box
   &__text-box {
@@ -827,7 +843,7 @@
       display: none;
     }
   }
-  &.show{
+  &.show {
     visibility: visible;
     opacity: 1;
   }
@@ -862,10 +878,10 @@
     background: var(--Banya-Graphite-source);
   }
   // .badge__icon-holder
-  &__icon-holder{
+  &__icon-holder {
     width: 12px;
     height: 12px;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;

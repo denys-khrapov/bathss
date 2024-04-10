@@ -321,11 +321,12 @@ export function main() {
 		const filterGender = document.querySelectorAll('.filter-heading__gender');
 		const badgeGender = document.querySelectorAll('.badge--gender');
 
-		const filterText = filterGenderActive.textContent;
-
-		badgeGender.forEach(badge => {
-			badge.textContent = filterText;
-		});
+		if(filterGenderActive){
+			const filterText = filterGenderActive.textContent;
+			badgeGender.forEach(badge => {
+				badge.textContent = filterText;
+			});
+		}
 		filterGender.forEach(btn => {
 			btn.addEventListener('click', () => {
 				filterGender.forEach(button => {

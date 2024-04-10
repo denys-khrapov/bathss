@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added two column section and styles">
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added service-card and services page and styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_common.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_common.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_sidebar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_sidebar.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_two-column.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_two-column.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/icon-person.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_faq.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_faq.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/heading-main-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/service-img-06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/service-img-06.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/experience.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/experience.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/faq.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -107,7 +109,8 @@
       <workItem from="1712646762185" duration="6897000" />
       <workItem from="1712735444670" duration="13360000" />
       <workItem from="1712766006379" duration="2903000" />
-      <workItem from="1712773165200" duration="2309000" />
+      <workItem from="1712773165200" duration="6378000" />
+      <workItem from="1712786124805" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -173,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712352211519</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added service-card and services page and styles">
+      <option name="closed" value="true" />
+      <created>1712775609874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712775609874</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +209,7 @@
     <MESSAGE value="added image-accordion section and styles, update files" />
     <MESSAGE value="added tickets section and styles" />
     <MESSAGE value="added two column section and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added two column section and styles" />
+    <MESSAGE value="added service-card and services page and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added service-card and services page and styles" />
   </component>
 </project>

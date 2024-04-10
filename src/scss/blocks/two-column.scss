@@ -2,6 +2,10 @@
   position: relative;
   padding: 64px 0;
   background: var(--Banya-Brown-50);
+  &--white-bg{
+    background: var(--Banya-Base-color-White-100);
+  }
+
   @media (min-width: $pc) {
     padding: 128px 0;
   }

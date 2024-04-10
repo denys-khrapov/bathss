@@ -28,7 +28,10 @@
     min-width: 256px;
     max-width: 376px;
     @media (min-width: $pc) {
-      max-width: 100%;
+      max-width: 528px;
+    }
+    @media (min-width: 1381px){
+        max-width: 748px;
     }
   }
   // .faq__image-holder

@@ -2,6 +2,9 @@
   // .heading-main--padding-96
   &--padding-96{
     padding: 16px 0 48px;
+    @media (min-width: $pc) {
+      padding: 16px 0 96px;
+    }
   }
   // .heading-main__container
   &__container {
