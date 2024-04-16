@@ -10,6 +10,11 @@
     top: 0;
     z-index: 1;
   }
+  &--without-sticky{
+    @media (min-width: $pc) {
+      position: static;
+    }
+  }
   // .visit__container
   &__container {
     display: flex;

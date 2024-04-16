@@ -1,0 +1,50 @@
+.booking {
+  background: var(--Banya-Base-color-White-100);
+  padding: 64px 0;
+  @media (min-width: $pc) {
+      padding: 96px 0;
+  }
+  // .booking__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+  }
+  // .booking__heading
+  &__heading {
+    .heading__title-box{
+      max-width: 100%;
+    }
+  }
+  // .booking__content
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    @media (min-width: $pc) {
+        gap: 124px;
+    }
+  }
+  // .booking__left-col
+  &__left-col {
+    min-width: 256px;
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  // .booking__choose
+  &__choose {
+    @media (min-width: $pc) {
+      height: 100%;
+    }
+  }
+  // .booking__right-col
+  &__right-col {
+    min-width: 256px;
+    flex: 1 0 0;
+  }
+  // .booking__accent-block
+  &__accent-block {
+  }
+}

@@ -75,6 +75,10 @@
         margin-top: 48px;
         row-gap: 16px;
       }
+      @media (min-width: 1921px){
+          max-width: 1920px;
+        margin: 48px auto 0;
+      }
     }
   }
 }

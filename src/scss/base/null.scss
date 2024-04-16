@@ -21,6 +21,7 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   min-width: $minWidth + px;
+
 }
 body {
   background: var(--Banya-Base-color-Dark-Background);
@@ -35,6 +36,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 input,
 button,
@@ -67,3 +69,4 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+

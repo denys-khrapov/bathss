@@ -16,6 +16,9 @@
       row-gap: 64px;
       position: relative;
     }
+    @media (min-width: 1921px){
+        max-width: 1920px;
+    }
   }
   // .celebrities__card
   &__card {

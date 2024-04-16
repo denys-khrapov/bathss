@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added service-card and services page and styles">
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added services social page and styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blocks/_faq.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_faq.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/heading-main-img-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/service-img-06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/service-img-06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_blog-main.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/page/blog/_blog-main.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_pagination.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/page/blog/_pagination.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/experience.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/experience.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/null.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/null.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/celebrities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/celebrities.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/faq.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/senses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/senses.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/service-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/service-card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/visit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/visit.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/fonts/icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/fonts/icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services-social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services-social.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +118,22 @@
       <workItem from="1712735444670" duration="13360000" />
       <workItem from="1712766006379" duration="2903000" />
       <workItem from="1712773165200" duration="6378000" />
-      <workItem from="1712786124805" duration="1370000" />
+      <workItem from="1712786124805" duration="2184000" />
+      <workItem from="1712819789846" duration="8978000" />
+      <workItem from="1712839600371" duration="11350000" />
+      <workItem from="1712853671850" duration="1439000" />
+      <workItem from="1712871058049" duration="5232000" />
+      <workItem from="1712906132353" duration="23219000" />
+      <workItem from="1713023847952" duration="4313000" />
+      <workItem from="1713086782748" duration="139000" />
+      <workItem from="1713087683335" duration="284000" />
+      <workItem from="1713097591461" duration="4961000" />
+      <workItem from="1713110935711" duration="11422000" />
+      <workItem from="1713161075978" duration="1562000" />
+      <workItem from="1713163765713" duration="5319000" />
+      <workItem from="1713176573135" duration="9002000" />
+      <workItem from="1713274732417" duration="5985000" />
+      <workItem from="1713299760980" duration="2498000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -184,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712775609874</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added services social page and styles">
+      <option name="closed" value="true" />
+      <created>1712787532364</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712787532364</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +241,7 @@
     <MESSAGE value="added tickets section and styles" />
     <MESSAGE value="added two column section and styles" />
     <MESSAGE value="added service-card and services page and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added service-card and services page and styles" />
+    <MESSAGE value="added services social page and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added services social page and styles" />
   </component>
 </project>

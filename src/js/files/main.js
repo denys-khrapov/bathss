@@ -299,7 +299,6 @@ export function main() {
 	function showTooltip() {
 		if (window.innerWidth <= 1279) {
 			const priceContainer = document.querySelectorAll('.price-container');
-
 			priceContainer.forEach(priceContainer => {
 				const tooltipBox = priceContainer.querySelector('.tooltip-box');
 				const closeTooltipBox = priceContainer.querySelector('.tooltip-box__close');

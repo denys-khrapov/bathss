@@ -128,9 +128,10 @@ body {
     margin: 0 auto;
   }
   @media (min-width: 1921px) {
-    //max-width: 1920px;
-    max-width: 1920px !important;
-    margin: 0 auto !important;
+    &.df-472,  .df-872, .df-320{
+      max-width: 1920px ;
+      margin: 0 auto;
+    }
   }
 }
 ::-webkit-scrollbar {
@@ -172,6 +173,8 @@ body {
 @import "blocks/two-column";
 @import "blocks/service-card";
 @import "blocks/services";
+@import "blocks/treatments";
+@import "blocks/booking";
 @import "page/blog/blog__main";
 @import "page/blog/pagination";
 @import "page/blog/small__header";

@@ -26,11 +26,29 @@
       }
     }
   }
+  // .service-card--without-hover
+  &--without-hover {
+    @media (min-width: $pc) {
+      &:hover {
+        .service-card__image-holder {
+          &::before {
+            display: none;
+          }
+        }
+        .service-card__logo-holder{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
   // .service-card--small
   &--small {
     padding: 16px;
     column-gap: 8px;
+    row-gap: 16px;
     width: calc(50% - 8px);
+    flex-wrap: wrap;
     @media (min-width: 592px) {
       flex: none;
     }
@@ -67,6 +85,8 @@
       display: none;
     }
     .service-card__content {
+      flex: 1 0 0;
+      min-width: 202px;
       @media (min-width: $pc) {
         display: flex;
         flex-direction: column;
@@ -115,6 +135,8 @@
         min-height: 260px;
         flex: 1 0 0;
         padding: 16px;
+      }
+      @media (min-width: 1715px){
         max-width: 260px;
       }
     }
@@ -307,6 +329,7 @@
       }
     }
   }
+
   // .service-card__content-inner
   &__content-inner {
     height: 100%;
@@ -396,13 +419,46 @@
       object-fit: cover;
     }
   }
-  .item-session-container{
+  // .service-card__link-more
+  &__link-more {
     position: relative;
     z-index: 5;
-    &__value{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-left: 8px;
+    margin-top: auto;
+    transition: color 0.4s;
+    &::after{
+      transition: color 0.4s;
+      font-size: 16px;
+    }
+    @media (min-width: $pc) {
+        &:hover{
+          color: var(--Banya-Green-600);
+          &::after{
+            color: var(--Banya-Green-600);
+          }
+        }
+    }
+    &:active{
+      color: var(--Banya-Green-800);
+      &::after{
+        color: var(--Banya-Green-800);
+      }
+    }
+  }
+  .item-session-container {
+    position: relative;
+    z-index: 5;
+    &__value {
       transition: color 0.4s, background 0.4s;
       @media (min-width: $pc) {
-        &:hover{
+        &:hover {
           background: var(--Banya-Graphite-source);
           color: var(--Banya-Brown-50);
         }
