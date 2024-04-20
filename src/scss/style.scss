@@ -65,6 +65,17 @@ body {
   @supports (overflow: clip) {
     overflow: clip;
   }
+  ::-webkit-scrollbar {
+    border-radius: 99px;
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 99px;
+    background: var(--Banya-Base-color-White-5);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--Banya-Base-color-White-10);
+  }
   // Притискаємо footer
   > main {
     flex: 1 1 auto;
@@ -134,17 +145,7 @@ body {
     }
   }
 }
-::-webkit-scrollbar {
-  border-radius: 99px;
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  border-radius: 99px;
-  background: var(--Banya-Base-color-White-5);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--Banya-Base-color-White-10);
-}
+
 // Підключення базових стилів, шаблонів (заготівель) та допоміжних класів
 // Для підключення/вимкнення конкретних стилів дивись base.scss
 @import "base";
@@ -175,7 +176,7 @@ body {
 @import "blocks/services";
 @import "blocks/treatments";
 @import "blocks/booking";
-@import "page/blog/blog__main";
-@import "page/blog/pagination";
-@import "page/blog/small__header";
+@import "blocks/cloth-blog";
+@import "blocks/cloth-working-house";
+@import "blocks/terms-condition";
 

@@ -44,7 +44,7 @@
     .item-tickets__detachable {
       background-color: var(--Banya-Graphite-source);
       &::before {
-        background-image: url("../../img/tickets-sheet-black.svg");
+        background-image: url("../img/tickets-sheet-black.svg");
       }
     }
   }
@@ -53,7 +53,7 @@
     .item-tickets__detachable {
       background-color: var(--Banya-Brown-500);
       &::before {
-        background-image: url("../../img/tickets-sheet-brown.svg");
+        background-image: url("../img/tickets-sheet-brown.svg");
       }
     }
   }
@@ -62,7 +62,7 @@
     .item-tickets__detachable {
       background-color: var(--Banya-Green-source);
       &::before {
-        background-image: url("../../img/tickets-sheet-green.svg");
+        background-image: url("../img/tickets-sheet-green.svg");
       }
     }
   }

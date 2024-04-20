@@ -16,6 +16,7 @@ export function main() {
 	}
 
 	initHoverNewsCard();
+	initHoverNewsCards();
 	initPauseButton();
 	openAllAccordionItems();
 	hoverLastChildimageAcc();
@@ -170,32 +171,38 @@ export function main() {
 
 	let acc = document.getElementsByClassName('accordion__title');
 	let accClose = document.getElementsByClassName('accordion__close');
-
 	function toggleAccordion() {
 		let isCloseButton = this.classList.contains('accordion__close');
-		let accordionContent = isCloseButton ?
-				this.previousElementSibling.querySelector('.accordion__content') :
-				this.nextElementSibling;
+		let accordionContent;
+		let targetTitle;
+
+		if (isCloseButton) {
+			accordionContent = this.previousElementSibling.querySelector('.accordion__content');
+			targetTitle = this.previousElementSibling.querySelector('.accordion__title');
+		} else {
+			accordionContent = this.nextElementSibling;
+			targetTitle = this;
+		}
+
 		let isOpen = accordionContent.style.maxHeight;
 		let accordionWrapper = this.closest('.accordion__wrapper');
 		let isShowAllMode = accordionWrapper.closest('.accordion').classList.contains('accordion-show-all');
+
 		if (!isOpen && !isShowAllMode) {
 			let allAccContentInSameContainer = accordionWrapper.closest('.accordion').querySelectorAll('.accordion__content');
 			allAccContentInSameContainer.forEach(content => {
-				if (content !== accordionContent) {
-					content.previousElementSibling.classList.remove('active');
-					content.style.maxHeight = null;
-					content.closest('.accordion__wrapper').classList.remove('accordion-active');
-				}
+				content.previousElementSibling.classList.remove('active');
+				content.style.maxHeight = null;
+				content.closest('.accordion__wrapper').classList.remove('accordion-active');
 			});
 		}
 
 		if (isOpen) {
-			this.classList.remove('active');
+			targetTitle.classList.remove('active');
 			accordionContent.style.maxHeight = null;
 			accordionWrapper.classList.remove('accordion-active');
 		} else {
-			this.classList.add('active');
+			targetTitle.classList.add('active');
 			accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
 			accordionWrapper.classList.add('accordion-active');
 		}
@@ -207,6 +214,42 @@ export function main() {
 	for (let i = 0; i < accClose.length; i++) {
 		accClose[i].addEventListener('click', toggleAccordion);
 	}
+	// function toggleAccordion() {
+	// 	let isCloseButton = this.classList.contains('accordion__close');
+	// 	let accordionContent = isCloseButton ?
+	// 			this.previousElementSibling.querySelector('.accordion__content') :
+	// 			this.nextElementSibling;
+	// 	let isOpen = accordionContent.style.maxHeight;
+	// 	let accordionWrapper = this.closest('.accordion__wrapper');
+	// 	let isShowAllMode = accordionWrapper.closest('.accordion').classList.contains('accordion-show-all');
+	// 	if (!isOpen && !isShowAllMode) {
+	// 		let allAccContentInSameContainer = accordionWrapper.closest('.accordion').querySelectorAll('.accordion__content');
+	// 		allAccContentInSameContainer.forEach(content => {
+	// 			if (content !== accordionContent) {
+	// 				content.previousElementSibling.classList.remove('active');
+	// 				content.style.maxHeight = null;
+	// 				content.closest('.accordion__wrapper').classList.remove('accordion-active');
+	// 			}
+	// 		});
+	// 	}
+	//
+	// 	if (isOpen) {
+	// 		this.classList.remove('active');
+	// 		accordionContent.style.maxHeight = null;
+	// 		accordionWrapper.classList.remove('accordion-active');
+	// 	} else {
+	// 		this.classList.add('active');
+	// 		accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+	// 		accordionWrapper.classList.add('accordion-active');
+	// 	}
+	// }
+	//
+	// for (let i = 0; i < acc.length; i++) {
+	// 	acc[i].addEventListener('click', toggleAccordion);
+	// }
+	// for (let i = 0; i < accClose.length; i++) {
+	// 	accClose[i].addEventListener('click', toggleAccordion);
+	// }
 
 	function openAllAccordionItems() {
 		let allAccordions = document.querySelectorAll('.accordion.accordion-show-all');
@@ -231,6 +274,21 @@ export function main() {
 
 				item.addEventListener('mouseout', function () {
 					this.querySelector('.slide-sel-articles__text-holder-js').style.maxHeight = '63px';
+				});
+			});
+		}
+	}
+
+	function initHoverNewsCards() {
+		let windowWidth = window.innerWidth;
+		if (windowWidth >= 1280) {
+			document.querySelectorAll('.card-blog').forEach(item => {
+				item.addEventListener('mouseover', function () {
+					this.querySelector('.card-blog__text-holder-js').style.maxHeight = '126px';
+				});
+
+				item.addEventListener('mouseout', function () {
+					this.querySelector('.card-blog__text-holder-js').style.maxHeight = '63px';
 				});
 			});
 		}
@@ -280,20 +338,6 @@ export function main() {
 				slide.classList.add('slide-image-accordion--full');
 			});
 		});
-		// imageAccIconClose.forEach((icon) => {
-		// 	icon.addEventListener('click', (e) => {
-		// 		e.stopPropagation();
-		// 		const parentSlide = icon.closest('.slide-image-accordion');
-		// 		if (parentSlide.classList.contains('slide-image-accordion--full')) {
-		// 			parentSlide.classList.remove('slide-image-accordion--full');
-		// 		} else {
-		// 			slides.forEach(slide => {
-		// 				slide.classList.remove('slide-image-accordion--full');
-		// 			});
-		// 			parentSlide.classList.add('slide-image-accordion--full');
-		// 		}
-		// 	});
-		// });
 	}
 
 	function showTooltip() {
@@ -320,7 +364,7 @@ export function main() {
 		const filterGender = document.querySelectorAll('.filter-heading__gender');
 		const badgeGender = document.querySelectorAll('.badge--gender');
 
-		if(filterGenderActive){
+		if (filterGenderActive) {
 			const filterText = filterGenderActive.textContent;
 			badgeGender.forEach(badge => {
 				badge.textContent = filterText;

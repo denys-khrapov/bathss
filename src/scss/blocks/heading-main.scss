@@ -6,6 +6,13 @@
       padding: 16px 0 96px;
     }
   }
+  // .heading-main--padding-30
+  &--padding-30 {
+    padding: 16px 0 32px;
+    @media (min-width: $pc) {
+      padding: 16px 0 30px;
+    }
+  }
   // .heading-main__container
   &__container {
   }
@@ -13,7 +20,6 @@
   &__price-container {
     position: relative;
     z-index: 5;
-    cursor: pointer;
     @media (min-width: $pc) {
       &:hover {
         .price-container__tooltip-box {
@@ -179,6 +185,10 @@
       object-fit: cover;
       border-radius: 16px;
       box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.25);
+    }
+    .service-card__logo-holder{
+      display: block;
+      border-bottom-left-radius: 16px;
     }
   }
   .button {

@@ -83,7 +83,7 @@
 								</div>
 								<div class="price-container__tooltip-box tooltip-box">
 									<div class="tooltip-box__close">
-										<img src="../../img/icon-close.svg" width="16" height="16" alt="icon">
+										<img src="../img/icon-close.svg" width="16" height="16" alt="icon">
 									</div>
 									<div class="tooltip-box__text-box">
 										<div class="tooltip-box__title">Off-peak:</div>
@@ -110,7 +110,7 @@
 								</div>
 							</div>
 						</div>
-						<a class="button button--secondary _icon-CaretDown" href="#">book now</a>
+						<a class="button button--secondary _icon-CaretDown" href="#booking-section">book now</a>
 					</div>
 					<div class="heading-main__right-col">
 						<a class="heading-main__image-holder" data-fancybox data-src="#modal-image-01" href="javascript:;">
@@ -242,7 +242,14 @@
 					</div>
 					<div class="two-column__right-col">
 						<div class="two-column__image-holder">
-							<img src="img/two-column-img-04.jpg" width="1350" height="900" alt="image">
+							<a data-fancybox="" data-src="#modal-image-04" href="javascript:;">
+								<img src="img/two-column-img-04.jpg" width="1350" height="900" alt="image">
+							</a>
+							<div id="modal-image-04" style="display:none;" class="modal-image">
+								<div class="modal-image__image-holder">
+									<img src="img/two-column-img-04.jpg" width="1350" height="900" alt="image">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -467,7 +474,152 @@
 				</div>
 			</div>
 		</section>
-		@@include('html/blocks/_booking.htm',{})
+		<section class="booking" id="booking-section">
+			<div class="booking__container container df-472">
+				<div class="booking__heading heading">
+					<div class="heading__top">
+						<div class="heading__title-box">
+							<h3 class="heading__subtitle heading-subtitle">book now</h3>
+							<h2 class="heading__title heading-title">TO BOOK AT HOXTON, CHOOSE YOUR SESSION</h2>
+						</div>
+					</div>
+				</div>
+				<div class="booking__content">
+					<div class="booking__left-col">
+						<div class="booking__image-holder">
+							<a data-fancybox="" data-src="#modal-image-05" href="javascript:;">
+								<img src="img/two-column-img-05.jpg" width="1350" height="900" alt="image">
+							</a>
+							<div id="modal-image-05" style="display:none;" class="modal-image">
+								<div class="modal-image__image-holder">
+									<img src="img/two-column-img-05.jpg" width="1350" height="900" alt="image">
+								</div>
+							</div>
+						</div>
+						<div class="booking__choose choose-booking">
+							<h3 class="choose-booking__title">select the number of guests</h3>
+							<div class="choose-booking__items">
+								<div class="choose-booking__item">
+									<input type="radio" id="time-3" name="time">
+									<label for="time-3">2 hours</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="time-4" name="time">
+									<label for="time-4">4 hours</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="guest-5" name="guest">
+									<label for="guest-5">5</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="guest-6" name="guest">
+									<label for="guest-6">6</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="guest-7" name="guest">
+									<label for="guest-7">7</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="guest-8" name="guest">
+									<label for="guest-8">8</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="guest-9" name="guest">
+									<label for="guest-9">9</label>
+								</div>
+								<div class="choose-booking__item">
+									<input type="radio" id="guest-10" name="guest">
+									<label for="guest-10">10</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="booking__right-col">
+						<div class="booking__accent-block accent-block">
+							<div class="accent-block__book-mark">
+								<img src="../img/icon-bookmarks.svg" width="17" height="16" alt="icon">
+							</div>
+							<h2 class="accent-block__title">Visit Us Today!</h2>
+							<div class="accent-block__text-holder">
+								<p>We're excited to welcome you to a session tailored to your preferences. If you have any special requests or need further assistance, please let us know.
+								</p>
+								<p>
+									You may add 1 hour to your booking for £100 (subject to availability). You may add more treatments to your booking for additional fee (subject to
+									availability).</p>
+							</div>
+							<a class="accent-block__link links links--graphite _icon-CaretRight" href="#">get help</a>
+							<div class="accent-block__wrapper-session wrapper-session">
+								<div class="wrapper-session__items">
+									<div class="wrapper-session__title">Session</div>
+									<div class="wrapper-session__item">
+										2,5 hours
+										<div class="wrapper-session__icon-holder">
+											<img src="../img/icon-time.svg" width="14" height="14" alt="icon">
+										</div>
+									</div>
+								</div>
+								<div class="accent-block__price-container price-container">
+									<div class="price-container__icon-holder">
+										<img src="img/icon-question.svg" width="15" height="14" alt="icon">
+									</div>
+									<div class="price-container__left-col price-container-inner">
+										<div class="price-container-inner__left-col">
+											<div class="price-container-inner__old-price-box old-price-box">
+												<span>£455</span>
+											</div>
+											<div class="price-container-inner__current-price">£340</div>
+										</div>
+										<div class="price-container-inner__right-col">
+											<div class="price-container-inner__name-price">Off-Peak</div>
+										</div>
+									</div>
+									<div class="price-container__line"><span></span></div>
+									<div class="price-container__right-col price-container-inner">
+										<div class="price-container-inner__left-col">
+											<div class="price-container-inner__old-price-box old-price-box">
+												<span>£575</span>
+											</div>
+											<div class="price-container-inner__current-price">£450</div>
+										</div>
+										<div class="price-container-inner__right-col">
+											<div class="price-container-inner__name-price">Peak</div>
+										</div>
+									</div>
+									<div class="price-container__tooltip-box tooltip-box">
+										<div class="tooltip-box__close">
+											<img src="../img/icon-close.svg" width="16" height="16" alt="icon">
+										</div>
+										<div class="tooltip-box__text-box">
+											<div class="tooltip-box__title">Off-peak:</div>
+											<div class="tooltip-box__text-holder">
+												<p>Monday – Friday 9:30 - 18:30</p>
+											</div>
+										</div>
+										<div class="tooltip-box__text-box">
+											<div class="tooltip-box__title">Peak:</div>
+											<div class="tooltip-box__text-holder">
+												<p>Monday – Friday 18:30 - 22:30</p>
+												<p>Saturday – Sunday 9:30 - 22:30</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accent-block__members-price members-price">
+								<div class="members-price__item">
+									<div class="members-price__title">Member’s Price:</div>
+									<span>off-peak £105/h</span>
+								</div>
+								<div class="members-price__item">
+									<span>peak £150/h</span>
+								</div>
+							</div>
+							<a class="accent-block__button button button--primary _icon-CaretRight" href="#">book now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<div class="images-container">
 			<img src="img/images-container-bg-01.jpg" width="2880" height="1125" alt="image">
 		</div>

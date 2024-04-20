@@ -4,27 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added services social page and styles">
+    <list default="true" id="1fe45541-71e6-466b-b200-57894a910216" name="Changes" comment="added services social article, services private, services private article, our facilities, how to banya, memberships, treatments, food and drink, gift vouchers page and styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog-article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_blog-main.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/page/blog/_blog-main.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_pagination.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/page/blog/_pagination.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/facilities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/howto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/howto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_head.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_head.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blocks/_booking.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blocks/_booking.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_blog-main.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_pagination.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/page/blog/_small-header.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/blog-card-obj-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/blog-card-obj-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/blog-card-obj-03.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/files/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/null.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/null.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/celebrities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/celebrities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/faq.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/booking.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/booking.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/heading-main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/image-accordion.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/senses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/senses.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/service-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/service-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/tickets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/tickets.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/two-column.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/visit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/visit.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/fonts/icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/fonts/icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/page/blog/blog__main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/page/blog/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/page/blog/small__header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sidebar-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sidebar-menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services-private-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services-private-article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services-private.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services-private.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services-social-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services-social-article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services-social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services-social.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/treatments-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/treatments-article.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="HTML File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -75,6 +89,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -133,7 +148,17 @@
       <workItem from="1713163765713" duration="5319000" />
       <workItem from="1713176573135" duration="9002000" />
       <workItem from="1713274732417" duration="5985000" />
-      <workItem from="1713299760980" duration="2498000" />
+      <workItem from="1713299760980" duration="2740000" />
+      <workItem from="1713337663560" duration="3577000" />
+      <workItem from="1713346686016" duration="8779000" />
+      <workItem from="1713382973206" duration="1879000" />
+      <workItem from="1713426766119" duration="4014000" />
+      <workItem from="1713437015438" duration="9104000" />
+      <workItem from="1713464059208" duration="7869000" />
+      <workItem from="1713473489774" duration="24000" />
+      <workItem from="1713512999689" duration="9848000" />
+      <workItem from="1713558452864" duration="4432000" />
+      <workItem from="1713613322985" duration="5469000" />
     </task>
     <task id="LOCAL-00001" summary="Update main js">
       <option name="closed" value="true" />
@@ -215,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712787532364</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added services social article, services private, services private article, our facilities, how to banya, memberships, treatments, food and drink, gift vouchers page and styles">
+      <option name="closed" value="true" />
+      <created>1713302951466</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713302951466</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +275,7 @@
     <MESSAGE value="added two column section and styles" />
     <MESSAGE value="added service-card and services page and styles" />
     <MESSAGE value="added services social page and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added services social page and styles" />
+    <MESSAGE value="added services social article, services private, services private article, our facilities, how to banya, memberships, treatments, food and drink, gift vouchers page and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added services social article, services private, services private article, our facilities, how to banya, memberships, treatments, food and drink, gift vouchers page and styles" />
   </component>
 </project>

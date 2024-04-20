@@ -47,4 +47,30 @@
   // .booking__accent-block
   &__accent-block {
   }
+  // .booking__image-holder
+  &__image-holder {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 256px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    @media (min-width: $pc) {
+      height: 376px;
+      img {
+        border-radius: 24px;
+      }
+    }
+    //.booking__image-holder--largest
+    &--largest {
+      height: 376px;
+      @media (min-width: $pc) {
+        height: 476px;
+      }
+    }
+  }
 }
